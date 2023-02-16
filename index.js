@@ -69,8 +69,11 @@ app.put("/item/:id", async function (req, res) {
 });
 
 //Endpoint  Delete - [DELETE] /item/:id
-// exercicio:
-// -> pesquisar
+app.delete("/item/:id", async function (req, res) {
+  const id = req.params.id;
+  await collection.deleteOne({_id: new ObjectId(id)});
+  res.send("Item removido com sucesso ");
+});
 
 app.listen(3000);
 }
