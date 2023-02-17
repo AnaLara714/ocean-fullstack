@@ -9,32 +9,38 @@ export default function ReadAll() {
     {
       _id: '1',
       nome: 'Café',
-      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748544.png'
+      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748544.png',
+      tag: ['Mercearia']
     },
     {
       _id: '2',
       nome: 'Pão',
-      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748475.png'
+      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748475.png',
+      tag: ['Padaria']
     },
     {
       _id: '3',
       nome: 'Papel Higienico',
-      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748752.png'
+      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748752.png',
+      tag: ['Higiene', 'Ecólogico']
     },
     {
       _id: '4',
       nome: 'Cenoura',
-      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748505.png'
+      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748505.png',
+      tag: ['Hortifruti', 'Saudável']
     },
     {
       _id: '5',
       nome: 'Banana',
-      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748481.png'
+      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748481.png',
+      tag: ['Hortifruti', 'Saudável']
     },
     {
       _id: '6',
       nome: 'Melancia',
-      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748788.png'
+      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748788.png',
+      tag: ['Hortifruti', 'Saudável']
     }
   ];
 
@@ -57,14 +63,14 @@ export default function ReadAll() {
  * os itens com uma cor que contraste bem com o fundo
  *
  * Segundo: JS; Lista; Map;
- * 1. Para cada item da lista de itens, crie uma propriedade chamada `tags`;
- * 2. Essa propriedade `tags` deve conter uma lista de strings;
- * 3. Cada string representa uma tag daquele personagem;
- * 4. Crie um componente <Tag /> que recebe uma `string` como
+ * OK ~ 1. Para cada item da lista de itens, crie uma propriedade chamada `tags`;
+ * OK ~ 2. Essa propriedade `tags` deve conter uma lista de strings;
+ * OK ~ 3. Cada string representa uma tag daquele personagem;
+ * OK ~ 4. Crie um componente <Tag /> que recebe uma `string` como
  * propriedade (`props`) e exibia um <div> com o texto informado.
- * 5. Estilize o componente <Tag /> para ter uma cor de fundo que contraste com
+ * OK ~ 5. Estilize o componente <Tag /> para ter uma cor de fundo que contraste com
  * o card.
- * 6. Utilizando o map, exiba dentro do componente <Card />, uma renderização
+ * OK ~ 6. Utilizando o map, exiba dentro do componente <Card />, uma renderização
  * desse componente <Tag /> recém criado.
  */
 
@@ -73,8 +79,9 @@ export default function ReadAll() {
       <Header/>
       <div className="itens">
         {items.map( function (item) {
+          // console.log(tags)
           // console.log(item._id)
-          return <Item key={'card:'+item._id} item={item}/>;
+          return <Item key={'card:'+item._id} item={item} />;
         })}
       </div>
     </>
