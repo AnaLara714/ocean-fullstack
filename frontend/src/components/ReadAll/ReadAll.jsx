@@ -1,19 +1,39 @@
 import Item from "../item/Item";
-
+import "./ReadAll.css";
 export default function ReadAll() {
 // Mock Items (exatamente a mesma estrutura que o back traria)
 // Isso facilita o trabalho aqui no Front, para conseguir estruturar
 // comportamento, sem precisar depender do back para receber dados
   const items = [
     {
-      _id: '1234',
+      _id: '1',
       nome: 'Café',
       imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748544.png'
     },
     {
-      _id: '12345',
+      _id: '2',
       nome: 'Pão',
       imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748475.png'
+    },
+    {
+      _id: '3',
+      nome: 'Papel Higienico',
+      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748752.png'
+    },
+    {
+      _id: '4',
+      nome: 'Cenoura',
+      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748505.png'
+    },
+    {
+      _id: '5',
+      nome: 'Banana',
+      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748481.png'
+    },
+    {
+      _id: '6',
+      nome: 'Melancia',
+      imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748788.png'
     }
   ];
 
