@@ -1,0 +1,8 @@
+.itens {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+}
