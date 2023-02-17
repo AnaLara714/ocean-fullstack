@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: grey;
+  color: #ffffff;
+}
+.button {
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+.button:hover {
+  color: rgb(0, 0, 0);
+}

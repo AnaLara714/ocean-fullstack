@@ -1,4 +1,5 @@
-import Item from "../item/Item";
+import Header from "../Header/Header";
+import Item from "../Item/Item";
 import "./ReadAll.css";
 export default function ReadAll() {
 // Mock Items (exatamente a mesma estrutura que o back traria)
@@ -44,9 +45,32 @@ export default function ReadAll() {
 - Pegar cada parte da informação recebida e colocá-la nos elementos de HTML
 */
 
+/**
+ * Desafios!
+ *
+ * Primeiro: HTML/CSS; Criação de componente.
+ * OK ~ 1. Criar um componente <Header /> que possua um logo na esquerda e dois itens
+ * clicáveis:
+ * - Home
+ * - Criar
+ * OK ~ 2. Estilizar o Header com uma cor de fundo, o logo com tamanho pequeno e
+ * os itens com uma cor que contraste bem com o fundo
+ *
+ * Segundo: JS; Lista; Map;
+ * 1. Para cada item da lista de itens, crie uma propriedade chamada `tags`;
+ * 2. Essa propriedade `tags` deve conter uma lista de strings;
+ * 3. Cada string representa uma tag daquele personagem;
+ * 4. Crie um componente <Tag /> que recebe uma `string` como
+ * propriedade (`props`) e exibia um <div> com o texto informado.
+ * 5. Estilize o componente <Tag /> para ter uma cor de fundo que contraste com
+ * o card.
+ * 6. Utilizando o map, exiba dentro do componente <Card />, uma renderização
+ * desse componente <Tag /> recém criado.
+ */
+
   return (
     <>
-      <h1>Minha lista de Compras</h1>
+      <Header/>
       <div className="itens">
         {items.map( function (item) {
           // console.log(item._id)
