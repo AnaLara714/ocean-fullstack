@@ -40,7 +40,7 @@ export default function ReadAll() {
       _id: '6',
       nome: 'Melancia',
       imagemUrl: 'https://cdn-icons-png.flaticon.com/128/4748/4748788.png',
-      tag: ['Hortifruti', 'Saudável']
+      // tag: ['Hortifruti', 'Saudável']
     }
   ];
 

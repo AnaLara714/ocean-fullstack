@@ -8,7 +8,7 @@ export default function Item(props) {
   return (
     <div className="card">
       <div className="tags">
-      {tags.map(function (tag){
+      {tags && tags.map(function (tag){
         return <Tag tag={tag}/>
       })}
       </div>
