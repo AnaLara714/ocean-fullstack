@@ -12,7 +12,7 @@ export default function Item(props) {
         return <Tag tag={tag}/>
       })}
       </div>
-      <h2>{item.nome}</h2>
+      <h2>{item.item}</h2>
       <img 
         src={item.imagemUrl}
       />

@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
 import Item from "../Item/Item";
 import "./ReadAll.css";
+
+//React Hooks
+import { useEffect, useState } from "react";
 
 /**
  * Novos desafios!
@@ -14,12 +16,10 @@ import "./ReadAll.css";
  * se confundir nas requisições
  */
 
-export default function ReadAll() {
-
 // Mock Items (exatamente a mesma estrutura que o back traria)
 // Isso facilita o trabalho aqui no Front, para conseguir estruturar
 // comportamento, sem precisar depender do back para receber dados
-  const itemsMock = [
+const itemsMock = [
     {
       _id: '1',
       nome: 'Café',
@@ -58,7 +58,7 @@ export default function ReadAll() {
     }
   ];
 
-
+export default function ReadAll() {
 //transfomar em estado para rederizar quando mudar 
   // useState retorna 2 coisas:
   // 1: o valor do estado
@@ -66,13 +66,13 @@ export default function ReadAll() {
   //   const estadoItems = useState([]);
   //   const items = estadoItems[0];
   //   const setItems = estadoItems[1];
-const [items, setItems] = useState([]);
+  const [items, setItems] = useState([]);
 
 //Realizar a requisicao p backend
   async function realizarRequisicao() {
-    // const url = "http://localhost:3000/item";
-    const url = "https://jornada-fullstack-ocean.onrender.com/item";
-    const response = await fetch(url);
+    const url = "http://localhost:3000/item";
+    // const url = "https://jornada-fullstack-ocean.onrender.com/item";
+    const response = await fetch(url);//fetch cria requisicao http
     const data = await response.json();
 
     console.log(data);
