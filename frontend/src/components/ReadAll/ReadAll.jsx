@@ -90,7 +90,7 @@ const [items, setItems] = useState([]);
   return (
     <div className="itens">
       {items.map( function (item) {
-        return <Item key={'card:'+item._id} item={item} />;
+        return <Item key={'card:'+item._id} item={item} className="card"/>;
       })}
     </div>       
   )
@@ -101,3 +101,5 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 https://cssgridgarden.com/
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
+
+//
