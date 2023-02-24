@@ -70,8 +70,8 @@ export default function ReadAll() {
 
 //Realizar a requisicao p backend
   async function realizarRequisicao() {
-    const url = "http://localhost:3000/item";
-    // const url = "https://jornada-fullstack-ocean.onrender.com/item";
+    // const url = "http://localhost:3000/item";
+    const url = "https://jornada-fullstack-ocean.onrender.com/item";
     const response = await fetch(url);//fetch cria requisicao http
     const data = await response.json();
 
