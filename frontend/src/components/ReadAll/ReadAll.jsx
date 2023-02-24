@@ -70,7 +70,8 @@ const [items, setItems] = useState([]);
 
 //Realizar a requisicao p backend
   async function realizarRequisicao() {
-    const url = "http://localhost:3000/item";
+    // const url = "http://localhost:3000/item";
+    const url = "https://jornada-fullstack-ocean.onrender.com/item";
     const response = await fetch(url);
     const data = await response.json();
 
