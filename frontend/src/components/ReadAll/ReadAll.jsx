@@ -91,7 +91,7 @@ const [items, setItems] = useState([]);
   return (
     <div className="itens">
       {items.map( function (item) {
-        return <Item key={'card:'+item._id} item={item} className="card"/>;
+        return <Item key={'card:'+item._id} item={item}/>;
       })}
     </div>       
   )
