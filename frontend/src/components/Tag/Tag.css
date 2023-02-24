@@ -1,13 +1,12 @@
 .tag {
-  background: #d4d800;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 136, 0);
-  border-radius: 15px;
+  background: #03365f;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 93, 146);
+  border-radius: 10px;
   align-items: center;
   display: flex;
-  margin-right: 5px;
-  padding: 5px;
+  padding: 7px;
   font-weight: 600;
-  /* width: 75px; */
   height: 15px;
+  width: max-content;
 }

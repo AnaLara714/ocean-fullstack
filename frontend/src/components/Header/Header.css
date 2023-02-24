@@ -4,6 +4,8 @@
   align-items: center;
   background: #ebeeff;
   color: #000000;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 .button {
   font-weight: 600;

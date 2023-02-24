@@ -1,16 +1,24 @@
 .card {
-  border: 2px solid rgb(255, 136, 0);
+  border: 2px solid #ebeeff;
   border-radius: 1rem; /* 1rem = 16px*/
   margin: 2rem;
-  padding: 20px;
+  padding: 15px;
   width: 200px;
 }
 
 .card > img {
-  width: 100px
+  width: 100px;
+  height: 150px;
 }
-
+.card > h2 {
+  max-width: 16rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .tags {
-  display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  /* gap: 0.5rem; */
+  margin-bottom: 1.5rem;
+  justify-content: center;
 }
